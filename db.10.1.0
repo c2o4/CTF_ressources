@@ -1,0 +1,15 @@
+;
+; BIND reverse data file for local 10.1.0.XXX net
+;
+$TTL    604800
+@       IN      SOA     ns.blacksheep.lan. root.blacksheep.lan. (
+                              5         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@        IN      NS      ns.
+10       IN      PTR     ns.blacksheep.lan.
+100      IN      PTR     ftp.blacksheep.lan.
+300      IN      PTR     mail.blacksheep.lan.

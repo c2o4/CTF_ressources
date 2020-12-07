@@ -3,14 +3,25 @@
 ;
 $TTL    604800
 @       IN      SOA     blacksheep.lan. root.blacksheep.lan. (
-                              2         ; Serial
+                              4         ; Serial
                          604800         ; Refresh
                           86400         ; Retry
                         2419200         ; Expire
                          604800 )       ; Negative Cache TTL
 
 @       IN      NS      ns.blacksheep.lan.
-@       IN      A       192.168.1.43
+@       IN      A       10.1.0.10
 @       IN      AAAA    ::1
-ns      IN      A       192.168.1.43
-other      IN      A       192.168.1.44
+ns      IN      A       10.1.0.10
+ftp     IN      A       10.1.0.100
+mail    IN      A       10.1.0.300
+www     IN      A       20.0.1.1
+dev     IN      A       20.0.1.200
+bdd     IN      A       20.0.1.100
+ssh     IN      A       10.0.0.200
+mon     IN      A       10.0.0.142
+ad      IN      A       172.16.42.1
+share   IN      A       172.16.42.2
+zeus    IN      A       172.16.42.200
+gorille IN      A       172.16.42.222
+cctv    IN      A       172.16.42.42
