@@ -1,0 +1,4 @@
+#Install qemu from https://qemu.weilnetz.de/w64/
+#Open Powershell
+cd 'C:\Program Files\qemu\'
+.\qemu-img.exe convert 'source.vmdk' -O qcow2 'dest.qcow2'
